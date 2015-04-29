@@ -6,35 +6,47 @@
 */
 
 module.exports = {
+  
+  type: {
+    is_country :  	function(country){
+    	return country;
+    },
+    is_latitude : 	function(latitude){
+    	return latitude;
+    },
+    is_longitude : 	function(longitude){
+    	return longitude;
+    }
+  },
 
   attributes: {
   	street_address: {
-  		type: 		"string",
+  		type: 		'string',
   		required: 	true
   	},
   	city: {
-  		type: 		"text",
+  		type: 		'text',
   		required: 	true
   	},
   	state: {
-  		type: 		"text",
+  		type: 		'text',
   		required: 	true
   	},
   	postcode: {
-  		type: 		"integer",
+  		type: 		'integer',
   		size: 		4,
   		required: 	true
   	},
   	country: {
-  		type: 		"string",
+  		type: 		'string',
   		required: 	true
   	},
   	latitude: {
-  		type: 		"float",
+  		type: 		'float',
   		required: 	true
   	},
   	longitude: {
-  		type: 		"float",
+  		type: 		'float',
   		required: 	true
   	}
   }

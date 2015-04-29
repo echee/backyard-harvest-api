@@ -9,19 +9,19 @@ module.exports = {
 
   attributes: {
   	species: {
-  		type: 		"string",
+  		type: 		'string',
   		required: 	true,
   		unique: 	true
   	},
   	alternate_name: {
-  		type: 		"string"
+  		type: 		'string'
   	},
   	botanical_name: {
-  		type: 		"string"
+  		type: 		'string'
   	},
   	harvests: {
-  		collection: "harvest",
-  		via: 		"produce"
+  		collection: 'harvest',
+  		via: 		'produce'
   	}
   }
 };

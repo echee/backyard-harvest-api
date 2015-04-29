@@ -6,6 +6,7 @@
 */
 
 module.exports = {
+
   attributes: {
   	name: {
 			type:       'string',
@@ -24,8 +25,13 @@ module.exports = {
       type:       'string',
       required:   true
     },
+    display_picture: {
+      type:       'string',
+      defaultsTo: 'default_pic.png',
+      required:   true
+    },
     backyard: {
-      model: 'backyard'
+      model:      'backyard'
     }
   }
 };

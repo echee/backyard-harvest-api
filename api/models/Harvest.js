@@ -9,16 +9,16 @@ module.exports = {
 
     attributes: {
         backyard: {
-            model: 		"backyard",
+            model: 		'backyard',
             required: 	true
         },
         quantity: {
-            type: 		"integer",
+            type: 		'integer',
             required: 	true
         },
         produce: {
-	  		collection: "produce",
-	  		via: 		"harvests"
+	  		collection: 'produce',
+	  		via: 		'harvests'
         }
     }
 };

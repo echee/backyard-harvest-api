@@ -9,19 +9,19 @@ module.exports = {
 
   attributes: {
   	name: {
-  		type: 		"string",
+  		type: 		'string',
   		required: 	true
   	},
   	owner: {
-  		model: 		"user",
+  		model: 		'user',
   		required: 	true
   	},
   	location: {
-  		model: 		"location",
+  		model: 		'location',
   		required: 	true
   	},
   	harvest: {
-  		model: 		"harvest"
+  		model: 		'harvest'
   	}
   }
 };
