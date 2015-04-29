@@ -21,9 +21,7 @@ module.exports = {
   		required: 	true
   	},
   	harvest: {
-  		collection: "produce",
-  		via: 		"backyards"
+  		model: 		"harvest"
   	}
   }
 };
-

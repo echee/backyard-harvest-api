@@ -19,9 +19,9 @@ module.exports = {
   	botanical_name: {
   		type: 		"string"
   	},
-  	backyards: {
-  		collection: "backyard",
-  		via: 		"harvest"
+  	harvests: {
+  		collection: "harvest",
+  		via: 		"produce"
   	}
   }
 };

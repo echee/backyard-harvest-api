@@ -1,21 +1,24 @@
 /**
-* Harvest.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * Harvest.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
 
 module.exports = {
 
-  attributes: {
-  	name: {
-  		type: 		"string",
-  		required: 	true
-  	},
-  	backyard: {
-  		model: 		"backyard",
-  		required: 	true
-  	}
-  }
+    attributes: {
+        backyard: {
+            model: 		"backyard",
+            required: 	true
+        },
+        quantity: {
+            type: 		"integer",
+            required: 	true
+        },
+        produce: {
+	  		collection: "produce",
+	  		via: 		"harvests"
+        }
+    }
 };
-
